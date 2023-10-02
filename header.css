@@ -1,0 +1,31 @@
+/*전체 크기*/
+header{position:fixed; width:100%; height:120px; background:rgb(235, 235, 235); z-index:1;}
+.header_menu{display:flex; justify-content:space-between; margin:0 auto; box-sizing:border-box; align-items:center; 
+    width:1100px; height:120px; padding:0px 10px;}
+
+/*header_menu*/
+.header_logo{width:100px; height:100px; border-radius:100px; background-color: yellow;}
+.header_menu_box{display:flex; flex-direction: column; align-items:flex-end; height:100%;}
+.header_top_menu{display:flex; justify-content: flex-end; align-items:center; width:100%; height:50%;}
+.header_top_menu>a>li{font-size:13px; margin-right:20px; color:rgb(88, 88, 88)}
+.header_top_menu>li>button[type="button"]{width:34px; height:34px; cursor:pointer; border:0.5px solid rgb(197, 197, 197); border-radius: 5px; background-color:white; margin-right:40px;}
+.header_top_menu>a>li:hover{text-decoration:underline;}
+.header_bottom_menu{display:flex; align-items:center;  height:50%;}
+.header_bottom_menu>a{height:100%;}
+.header_bottom_menu>a>li{display:flex; align-items:center; padding:0px 15px; height:100%; font-size:15px;}
+.header_bottom_menu>a>li:hover{text-decoration: underline;}
+
+/*header_submenu*/
+.big_submenu{width:100%; height:0px; overflow:hidden; position:fixed; top:120px; background-color: rgb(41, 41, 41); z-index:1;}
+.big_submenu>.header_submenu{display:flex; justify-content:space-evenly; flex-wrap:wrap; width:1100px; margin:0px auto; height:100%;}
+.header_submenu>li>ul>li{width:200px; margin-bottom:10px; font-size:13px;}
+.header_submenu>li>ul>li>a{display:block; color:rgb(158, 157, 157);}
+.header_submenu>li>ul>li:nth-child(1)>a{color:white; margin-bottom:20px; font-size:15px; font-weight:700;}
+.header_submenu>li>ul>li:hover>a{text-decoration: underline;}
+section>.section_img_box{display:block; width:100%; padding-bottom:30%; content:""; position:relative;}
+.section_img_box>.img_box{display:flex; position:absolute; width:100%; height:100%; justify-content:center; align-items: center; background:green;}
+.section_img_box>.img_box>.section_img{opacity:0; transition: 0.5s;}
+.move_text{display:flex; flex-direction: column; justify-content:center; width:100%; height:700px; color:white; background-image:url(starbucksimage.jpg);}
+.move_text>.text_1{width:220px; background:red; padding:10px; text-align:end; font-size:45px; position:relative; left:-250px; transition:1s;}
+.move_text>.text_2{width:440px; background:green; padding:10px; text-align:end; white-space: nowrap; position:relative; left:-500px; transition:2s;}
+.move_text>.text_2 span{font-weight:700;} .move_text>.text_2>p>span:nth-child(1){font-size:25px;} .move_text>.text_2>p>span:nth-child(3){font-size:25px;}
